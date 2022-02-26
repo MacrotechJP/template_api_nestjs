@@ -1,0 +1,8 @@
+FROM node:16.14.0
+
+WORKDIR /api
+COPY ./ ./
+
+RUN npm install
+
+CMD ["npm", "run", "start:dev"]
